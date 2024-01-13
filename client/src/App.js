@@ -14,20 +14,7 @@ const App = () => {
     console.log(result.data)
   }
   useEffect(()=>{
-    //fetch('/members').then(res=>{console.log(res)}).then(data=>{setState(data); console.log(data)})
-    //fetchMata()
     console.log('fetching')
-    // https://api.github.com/users/Shaurya9923/repos
-    // axios(`/https://api.github.com/users/Shaurya9923/repos`)
-    // .then(res => {res.json();console.log(res)})
-    // .then(
-    //   (result) => {
-    //     console.log(result)
-    //   },
-    //   (error)=>{
-    //     console.log(error)
-    //   }
-    // )
     fetchMata()
     fetchRepos()
   }, [])
